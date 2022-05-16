@@ -4,7 +4,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Simple Login Form Example</title>
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
         <link rel="stylesheet" href="CSS/login.css">
 
     </head>
@@ -19,7 +18,7 @@
                     session_start();
                     if (isset($_SESSION['dadosErrados'])):
                         ?>
-                        <div class="notification is-danger">
+                        <div class="erro">
                             <p>ERRO: Usuário ou senha inválidos.</p>
                         </div>
 
@@ -27,18 +26,21 @@
                     endif;
                     unset($_SESSION['dadosErrados']);
                     ?>
+                    
 
                     <div class="input-field">
-                        <input type="texto" placeholder="NickName" name="user" autocomplete="nope">
+                        <input type="texto" placeholder="Usuário" name="user" autocomplete="nope">
                     </div>
                     <div class="input-field">
                         <input type="password" placeholder="Password" name="password" autocomplete="new-password">
                     </div>
+                    Se ainda não tiver conta: <a href='registar.php'>Clique Aqui! </a>
                 </div>
                 <div class="action">
                     <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
                 </div>
             </form>
+          
         </div>
 
 
