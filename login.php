@@ -12,7 +12,7 @@ if (empty(filter_input(INPUT_POST, 'user')) || empty(filter_input(INPUT_POST, 'p
 $user = mysqli_real_escape_string($conectar, filter_input(INPUT_POST, 'user'));
 $password = mysqli_real_escape_string($conectar, filter_input(INPUT_POST, 'password'));
 
-$query = "Select user_id, user from user where user = '{$user}' and password = md5('{$password}')";
+$query = "Select iduser, username from user where username = '{$user}' and password = md5('{$password}')";
 
 $result = mysqli_query($conectar, $query);
 
