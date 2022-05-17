@@ -1,13 +1,16 @@
-nav {
-    background-color: black;
-}
 
+nav {
+    margin-top: 0;
+    background-color: black;
+    height: 30px;
+}
 nav a:hover {
     background-color: white;
     color: #212121;
+    height: 30px;
 }
 
-li {
+.navgaçao {
     display: inline;
     list-style-type: none;
     margin-right: 50px;
