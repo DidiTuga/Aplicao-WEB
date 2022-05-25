@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Login Form Example</title>
-
+    <title>Login</title>
     <link rel="stylesheet" href="CSS/login.css">
 
 </head>
@@ -13,7 +12,6 @@
 <body>
     <!-- partial:index.partial.html -->
     <div class="login-form">
-
         <form action="config/login.php" method="POST">
             <h1>Login</h1>
             <div class="content">
