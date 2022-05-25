@@ -12,7 +12,7 @@
     <!-- partial:index.partial.html -->
     <div class="login-form">
 
-        <form action="registar_1.php" method="POST">
+        <form action="config/registar_1.php" method="POST">
             <h1>Registar</h1>
             <div class="content">
                 <?php
@@ -20,7 +20,7 @@
                 if (isset($_SESSION['passwordDiff'])) :
                 ?>
                     <div class="notification">
-                        <p id = "erro">Passwords diferentes! Por favor meta a password igual.</p>
+                        <p id="erro">Passwords diferentes! Por favor meta a password igual.</p>
                     </div>
 
                 <?php
