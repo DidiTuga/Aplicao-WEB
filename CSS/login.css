@@ -6,7 +6,11 @@
 }
 
 body {
-  background-image: "..//MinhaImagem.jpg";
+  background:url("../imagens/tiamat.jpg");
+  background-size: cover
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat; 
   font-family: 'Rubik', sans-serif;
 }
 
@@ -26,7 +30,7 @@ body {
   padding: 35px 35px 0 35px;
   font-weight: 300;
 }
-.login-form #erro{
+.login-form .notification{
   background-color: rgb(255, 0, 0);
   padding: 10px;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);

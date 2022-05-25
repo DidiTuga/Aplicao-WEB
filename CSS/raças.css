@@ -1,28 +1,47 @@
-nav {
-    background-color: black;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+header img {
+    width: 100%;
+    height: 60vh
+}
+nav {
+    background-color: black;
+    padding: 1px 0px;
+}
 nav a:hover {
-    background-color: white;
+    background-color: whitesmoke;
+    padding: 10px 3px;
+    border-radius: 5px;
     color: #212121;
 }
 
-li {
+#menu li {
     display: inline;
     list-style-type: none;
-    margin-right: 50px;
+    margin-right: 35px;
     margin-top: 15px;
 }
 
-a {
-    color: white;
+nav a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
+#menu{
+    background-color: #474646;
+}
 
-.footer{
+
+nav #direita{
+    float: right;
+}
+
+.footer {
     font-size: small;
     text-align: center;
     background-color: black;
+    padding: 15px;
     color: white;
-    margin-top: 2%;
+
 }
