@@ -1,55 +1,89 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="CSS/inicio.css">
+    <link rel="stylesheet" href="CSS/raças.css">
     <meta charset="UTF-8">
     <title>DungeonPT - Armas</title>
 </head>
 <body>
 
 <header>
-    <img src="imagens/lostmines.jpg" style="width: 100%; height: 75%">
+    <img src="imagens/lostmines.jpg">
 </header>
 
-<nav>
-    <ul>
-        <li>
-            <a href="inicio.html">
-                Página Inicial
-            </a>
-        </li>
-        <li>
-            <a href="classes.html">
-                Classes
-            </a>
-        </li>
+<div id="menu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.php">
+                        Página Inicial
+                    </a>
+                </li>
+                <li>
+                    <a href="classes.php">
+                        Classes
+                    </a>
+                </li>
 
-        <li>
-            <a href="raças.html">
-                Raças
-            </a>
-        </li>
+                <li>
+                    <a href="Raças.php">
+                        Raças
+                    </a>
+                </li>
 
-        <li>
-            <a href="feitiços.html">
-                Feitiços
-            </a>
-        </li>
+                <li>
+                    <a href="feitiços.php">
+                        Feitiços
+                    </a>
+                </li>
 
-        <li>
-            <a href="armas.html">
-                Armas
-            </a>
-        </li>
+                <li>
+                    <a href="armas.php">
+                        Armas
+                    </a>
+                </li>
 
-        <li>
-            <a href="cirador_personagens.html">
-                Criador de Personagens
-            </a>
-        </li>
-    </ul>
-</nav>
+                <li>
+                <a href="criaPersonagens.php">
+                        Criador de Personagens
+                    </a>
+                </li>
 
+                <div id="direita">
+
+                    <?php
+                    if (isset($_SESSION['usuario'])) :
+                    ?>
+                        <li>
+                            <a href="painel.php">Profile</a>
+                        </li>
+                        <li>
+                            <a href="config/logout.php"> Sair</a>
+                        </li>
+
+                    <?php
+                    endif;
+                    ?>
+                    <?php
+                    if (!isset($_SESSION['usuario'])) :
+                    ?>
+                        <li>
+                            <a href="R_login.php">Entrar</a>
+                        </li>
+
+                    <?php
+                    endif;
+                    ?>
+
+                </div>
+
+
+            </ul>
+        </nav>
+    </div>
 <div>
     <h2>Armas</h2>
     Para sobreviveres às tuas aventuras terás de estar bem equipado para todos os confrontos e perigos com os quais te poderás cruzar.

@@ -52,7 +52,7 @@ include('config/verificalogin.php');
                 </li>
 
                 <li>
-                <a href="criaPersonagens.php">
+                    <a href="criaPersonagens.php">
                         Criador de Personagens
                     </a>
                 </li>
@@ -89,10 +89,37 @@ include('config/verificalogin.php');
             </ul>
         </nav>
     </div>
-    <div>
-        <h2> Bem vindo, <?php
-                        $test = $_SESSION["usuario"];
-                        echo $test ?>!!</h2>
+
+    <div id="body">
+        Aqui podes criar a tua personagem de Dungeons and Dragons, depois ao vim de criares vai te aparecer no teu profile!
+        <div id="form">
+            <form action="/action_page.php">
+                <p><label>Nome da Personagem:</label>
+                    <input type="text" id="nome" placeholder="Nome">
+                </p>
+
+                <label>Escolhe a tua raça:</label>
+                <select name="raca" id="raca">
+                    <option value="humano">Humana</option>
+                    <option value="anão">Anão</option>
+                    <option value="elfo">Elfo</option>
+                </select>
+                <br>
+                <br>
+                <label>Escolhe a tua classe:</label>
+                <select name="raca" id="raca">
+                    <option value="humano">Lutador</option>
+                    <option value="anão">Rogue</option>
+                    <option value="elfo">Feiticeiro</option>
+                </select>
+                <br>
+                <br>
+                <p>Status: força | inteligência | sabedoria | destreza | constituição | carisma</p>
+                <p>Os seus status vão ser gerados aleatoriamente! Depois podes ver no teu perfil quais foram os que te calharam!</p>
+                <input type="submit" value="Submit" name="Criar">
+            </form>
+
+        </div>
 
     </div>
 

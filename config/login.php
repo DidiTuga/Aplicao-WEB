@@ -5,7 +5,7 @@ include ('conectar.php');
 if (empty(filter_input(INPUT_POST, 'user')) || empty(filter_input(INPUT_POST, 'password'))) {
     session_start();
     $_SESSION['dadosErrados'] = true;
-    header("Location: ../index.php");
+    header("Location: ../R_login.php");
     exit();
 }
 
@@ -26,7 +26,7 @@ if ($row == 1) {
 } else {
     session_start();
     $_SESSION['dadosErrados'] = true;
-    header("Location: ../index.php");
+    header("Location: ../R_login.php");
 
     exit();
 }
