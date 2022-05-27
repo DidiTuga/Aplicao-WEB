@@ -10,7 +10,7 @@ include('config/verificalogin.php');
 
 <head>
     <meta charset="UTF-8">
-    <title>raças</title>
+    <title>DungeonPT - Perfil</title>
     <link rel="stylesheet" href="CSS/raças.css">
 </head>
 

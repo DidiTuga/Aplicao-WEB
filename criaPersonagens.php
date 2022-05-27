@@ -10,7 +10,7 @@ include('config/verificalogin.php');
 
 <head>
     <meta charset="UTF-8">
-    <title>raças</title>
+    <title>DungeonPT - Criador de Personagens</title>
     <link rel="stylesheet" href="CSS/raças.css">
 </head>
 
@@ -89,28 +89,49 @@ include('config/verificalogin.php');
             </ul>
         </nav>
     </div>
+    <?php
+                if (isset($_SESSION['name'])) :
+                ?>
+                    <div id="notificacao">
+                        <p id="erro">Tem que colocar um nome na personagem!</p>
+                    </div>
 
+                <?php
+                endif;
+                unset($_SESSION['name']);
+                ?>
+                <?php
+                if (isset($_SESSION['existe'])) :
+                ?>
+                    <div id="notificacao">
+                        <p>Já existe uma personagem com esse nome!</p>
+                    </div>
+
+                <?php
+                endif;
+                unset($_SESSION['existe']);
+                ?>
     <div id="body">
         Aqui podes criar a tua personagem de Dungeons and Dragons, depois ao vim de criares vai te aparecer no teu profile!
         <div id="form">
-            <form action="/action_page.php">
+            <form action="config/cria_.php" method='POST'>
                 <p><label>Nome da Personagem:</label>
-                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="text" name="nome" placeholder="Nome">
                 </p>
 
                 <label>Escolhe a tua raça:</label>
                 <select name="raca" id="raca">
-                    <option value="humano">Humana</option>
-                    <option value="anão">Anão</option>
-                    <option value="elfo">Elfo</option>
+                    <option value="Humano">Humano</option>
+                    <option value="Anão">Anão</option>
+                    <option value="Elfo">Elfo</option>
                 </select>
                 <br>
                 <br>
                 <label>Escolhe a tua classe:</label>
-                <select name="raca" id="raca">
-                    <option value="humano">Lutador</option>
-                    <option value="anão">Rogue</option>
-                    <option value="elfo">Feiticeiro</option>
+                <select name="classe" id="classe">
+                    <option value="Lutador">Lutador</option>
+                    <option value="Rogue">Rogue</option>
+                    <option value="Feiticeiro">Feiticeiro</option>
                 </select>
                 <br>
                 <br>

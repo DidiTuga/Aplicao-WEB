@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DungeonPT - Raças</title>
+    <title>DungeonPT - Feitiços</title>
     <link rel="stylesheet" href="CSS/raças.css">
 </head>
 <body>
