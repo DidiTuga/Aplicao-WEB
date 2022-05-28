@@ -97,7 +97,10 @@ include('config/verificalogin.php');
     </div>
 
     <?php
+
+    // LoGIN USER NORMAL
     if ($_SESSION['usuario'] != "admin") {
+         echo "<p>Todos os personagens criados por ti encontram-se aqui em baixo:</p>";
         echo "<div id='tabela'>";
         $url = "http://localhost/Projeto/API/Personagens/search.php?username=" . $_SESSION['usuario'];
         $curl = curl_init($url);
@@ -152,7 +155,7 @@ include('config/verificalogin.php');
 
     //ADMIN LOGIN
     if ($_SESSION['usuario'] == "admin") {
-        echo '<p>Tens aqui todas as personagens criadas:</p>';
+        echo '<p>Todos as personagems criadas encontram-se aqui em baixo:</p>';
         echo "<div id='tabela'>";
         $url = "http://localhost/Projeto/API/Personagens/read.php";
         $curl = curl_init($url);

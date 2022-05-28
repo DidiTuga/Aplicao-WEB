@@ -30,7 +30,7 @@ if ($row > 0) {
     exit();
 
 } else {
-    $sql = "INSERT INTO pweb.personagem (username, nome, raça, classe,força, inteligência, sabedoria, destreza, constituição, carisma ) VALUES ('{$user}', '{$name}', '{$raca}', '{$classe}', $str, $int, '{$sab}', '{$des}', '{$cons}', '{$car}')";
+    $sql = "INSERT INTO pweb.personagem (username, nome, raca, classe,forca, inteligencia, sabedoria, destreza, constituicao, carisma ) VALUES ('{$user}', '{$name}', '{$raca}', '{$classe}', $str, $int, '{$sab}', '{$des}', '{$cons}', '{$car}')";
     echo $sql;
     $result = mysqli_query($conectar, $sql);
 
