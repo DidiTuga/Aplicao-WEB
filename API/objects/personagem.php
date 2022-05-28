@@ -48,7 +48,7 @@ class Personagem
     {
 
         // query to insert record
-        $query = "INSERT INTO " . $this->table_name . " (username, nome, raça, classe, força, inteligência, sabedoria, destreza, constituição, carisma ) VALUES (:user, :name, :raca, :classe, :str, :int, :sab, :des, :cons, :car)";
+        $query = "INSERT INTO " . $this->table_name . " (username, nome, raca, classe, forca, inteligencia, sabedoria, destreza, constituicao, carisma ) VALUES (:user, :name, :raca, :classe, :str, :int, :sab, :des, :cons, :car)";
         // prepare query
         $stmt = $this->conn->prepare($query);
 
@@ -117,6 +117,27 @@ class Personagem
 
 
         $query = "Select * From " . $this->table_name . " Where username = ?";
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
+
+        // sanitize
+        $keywords = htmlspecialchars(strip_tags($keywords));
+
+        // bind
+        $stmt->bindParam(1, $keywords);
+
+        // execute query
+        $stmt->execute();
+
+        return $stmt;
+    }
+    function searchNome($keywords)
+    {
+
+        // select all query
+
+
+        $query = "Select * From " . $this->table_name . " Where nome = ?";
         // prepare query statement
         $stmt = $this->conn->prepare($query);
 

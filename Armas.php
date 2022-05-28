@@ -93,7 +93,7 @@ session_start();
 Estas podem ser usadas por qualquer personagem.
 <br>
 <br>
-<table border="1">
+<table cellspacing="0" cellpadding="0" border="none">
     <tr>
         <td>Arma</td><td>Dano</td><td>Propriedades</td>
     </tr>
@@ -137,7 +137,7 @@ Estas podem ser usadas por qualquer personagem.
     Estas podem ser usadas por personagens que possuam essa habilidade.
     <br>
     <br>
-    <table border="1">
+    <table cellspacing="0" cellpadding="0" border="none">
         <tr>
             <td>Arma</td><td>Dano</td><td>Propriedades</td>
         </tr>

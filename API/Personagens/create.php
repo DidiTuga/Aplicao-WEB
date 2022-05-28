@@ -1,4 +1,5 @@
 <?php
+session_start();
 // required headers
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
@@ -18,37 +19,39 @@ $db = $database->getConnection();
 $personagem = new Personagem($db);
   
 // get posted data
-$data = json_decode(file_get_contents("php://input"));
+$nome = $_POST["nome"];
+$classe = $_POST["classe"];
+$raca = $_POST["raca"];
   
 // make sure data is not empty
 if(
-    !empty($data->nome) &&
-    !empty($data->raca) &&
-    !empty($data->classe) &&
-    !empty($data->username)
+    !empty($nome) &&
+    !empty($classe) &&
+    !empty($raca)
 ){
+    //verifica se o personagem já existe
+    $stmt = $personagem->searchNome($nome);
+    $num = $stmt->rowCount();
+    if($num == 0){
+
 
     // set personagem property values
-    $personagem->username=$data->username;
-    $personagem->nome=$data->nome;
-    $personagem->raca=$data->raca;
-    $personagem->classe=$data->classe;
-
-    $personagem->str=$data->str;
-    $personagem->int=$data->int;
-    $personagem->sab=$data->sab;
-    $personagem->des=$data->des;
-    $personagem->cons=$data->cons;
-    $personagem->car=$data->car;
-  
+    $personagem->username=$_SESSION["usuario"];
+    $personagem->nome=$nome;
+    $personagem->raca=$raca;
+    $personagem->classe=$classe;
+    $personagem->str=random_int(8, 18);
+    $personagem->int=random_int(8, 18);
+    $personagem->sab=random_int(8, 18);
+    $personagem->des=random_int(8, 18);
+    $personagem->cons=random_int(8, 18);
+    $personagem->car=random_int(8, 18);
+    
     // create the personagem
     if($personagem->create()){
   
-        // set response code - 201 created
-        http_response_code(201);
-  
-        // tell the user
-        echo json_encode(array("message" => "personagem was created."));
+        header("Location: ../../criaPersonagens.php");
+        exit();
     }
   
     // if unable to create the personagem, tell the user
@@ -60,6 +63,16 @@ if(
         // tell the user
         echo json_encode(array("message" => "Unable to create personagem."));
     }
+}else{
+    // set response code - 503 service unavailable
+    http_response_code(503);
+
+    // tell the user
+    echo json_encode(array("message" => "personagem já existe."));
+    $_SESSION["existe"] = true;
+    header("Location: ../../criaPersonagens.php");
+    exit();
+}
 }
   
 // tell the user data is incomplete
@@ -70,5 +83,7 @@ else{
   
     // tell the user
     echo json_encode(array("message" => "Unable to create personagem. Data is incomplete."));
+    $_SESSION['name'] = true;
+    header("Location: ../../criaPersonagens.php");
+    exit();
 }
-?>

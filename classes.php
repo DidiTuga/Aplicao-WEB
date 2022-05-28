@@ -17,7 +17,7 @@ session_start();
         border: 1px solid black;
         border-collapse: collapse;
         padding: 6px;
-    },
+    }
     h4{
         color: #581e00;
     }
@@ -100,7 +100,7 @@ session_start();
         </nav>
     </div>
 
-    <table cellspacing="0" cellpadding="0" border="none">
+    <table id="tabelas" cellspacing="0" cellpadding="0" border="none">
         <tr>
             <td class="imagens">
 

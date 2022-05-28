@@ -100,7 +100,7 @@ include('config/verificalogin.php');
 
     // LoGIN USER NORMAL
     if ($_SESSION['usuario'] != "admin") {
-         echo "<p>Todos os personagens criados por ti encontram-se aqui em baixo:</p>";
+        echo "<p>Todos os personagens criados por ti encontram-se aqui em baixo:</p>";
         echo "<div id='tabela'>";
         $url = "http://localhost/Projeto/API/Personagens/search.php?username=" . $_SESSION['usuario'];
         $curl = curl_init($url);
@@ -112,7 +112,7 @@ include('config/verificalogin.php');
         $json_object = json_decode($result);
 
         if ($json_object != null) {
-            echo '<table border="1">';
+            echo '<table cellspacing="0" cellpadding="0" border="none">';
             echo '
             <tr>
         <th> ID da Perso.        </th>
@@ -151,9 +151,25 @@ include('config/verificalogin.php');
 
             echo "<p>Não existem personagens criadas na sua conta!</p>";
         }
+        echo "<div id='tempo'>";
+        echo "<p>Tem aqui o tempo na Covilhã:</p>";
+        $city = "Covilhã";
+        $apikey = "c8114fe70716582210f17ad59ae591f0";
+        $api_url = "http://api.openweathermap.org/data/2.5/weather?q=" . $city . "&appid=" . $apikey;
+        $tempo_data = json_decode(file_get_contents($api_url), true);
+        $temp = $tempo_data['main']['temp'];
+        $temp = round($temp - 273.15);
+        $temperature_description = $tempo_data['weather'][0]['description'];
+        $temperature_icon = $tempo_data['weather'][0]['icon'];
+        $temperature_icon_url = "http://openweathermap.org/img/w/" . $temperature_icon . ".png";
+        echo "<img src='$temperature_icon_url'>";
+        echo "<p>Tempo em Covilhã: $temp graus, $temperature_description</p>";
+        echo "<p>Aproveite se tiver um bom tempo para passar com seus amigos a jogar D&D!</p>";
+        echo "</div>";
     }
 
     //ADMIN LOGIN
+    //////////////////////////
     if ($_SESSION['usuario'] == "admin") {
         echo '<p>Todos as personagems criadas encontram-se aqui em baixo:</p>';
         echo "<div id='tabela'>";
@@ -166,7 +182,7 @@ include('config/verificalogin.php');
         curl_close($curl);
         $json_object = json_decode($result);
         if ($json_object != null) {
-            echo '<table border="1">';
+            echo '<table cellspacing="0" cellpadding="0" border="none">';
             echo '
                 <tr>
             <th> ID da Perso.        </th>
@@ -201,7 +217,7 @@ include('config/verificalogin.php');
             }
             echo '</table>';
             echo "</div>";
-        }else{
+        } else {
             echo "<p><b>Não existem personagens criadas!</b></p>";
         }
         // PHP INPUT Text
@@ -210,8 +226,6 @@ include('config/verificalogin.php');
         echo '<p>ID da personagem: <input type="text" name="id" /></p>';
         echo '<p><input type="submit" value="Apagar" /></p>';
         echo '</form>';
-
-
 
         echo "<p>Você é o administrador, você pode ver todos os utilizadores.</p>";
         echo "<div id='users'>";
@@ -223,7 +237,7 @@ include('config/verificalogin.php');
         $result = curl_exec($curl);
         curl_close($curl);
         $json_object = json_decode($result);
-        echo '<table border="1">';
+        echo '<table cellspacing="0" cellpadding="0" border="none">';
         echo '
                 <tr>
             <th> ID do user     </th>
@@ -243,6 +257,7 @@ include('config/verificalogin.php');
         echo '</table>';
         echo "</div>";
     }
+
     ?>
 
     <div class="footer">DungeonPT.lmd all rights reserved</div>

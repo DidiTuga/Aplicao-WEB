@@ -114,7 +114,7 @@ include('config/verificalogin.php');
     <div id="body">
         Aqui podes criar a tua personagem de Dungeons and Dragons, depois ao vim de criares vai te aparecer no teu profile!
         <div id="form">
-            <form action="config/cria_.php" method='POST'>
+            <form action="API/Personagens/create.php" method=POST'>
                 <p><label>Nome da Personagem:</label>
                     <input type="text" name="nome" placeholder="Nome">
                 </p>

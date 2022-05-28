@@ -64,6 +64,9 @@ session_start();
                         Criador de Personagens
                     </a>
                 </li>
+                <li>
+                    <a href="http://localhost/Projeto/pdf.php">Gerar PDF</a>
+                </li>
 
                 <div id="direita">
 
@@ -97,7 +100,7 @@ session_start();
             </ul>
         </nav>
     </div>
-<table cellspacing="0" cellpadding="0" border="none">
+<table id="tabelas" cellspacing="0" cellpadding="0" border="none">
     <tr>
         <td class="imagens">
 
