@@ -69,9 +69,11 @@ nav #direita{
 table{
     border:transparent;
 }
+
 #tabela table{
     border: 1px solid black;
 }
+
 body{
     background-color: #E4D1B9;
     font-family: Copperplate;

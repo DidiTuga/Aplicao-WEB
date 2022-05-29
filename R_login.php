@@ -12,7 +12,7 @@
 <body>
     <!-- partial:index.partial.html -->
     <div class="login-form">
-        <form action="API/Users/login.php" method="POST">
+        <form action="config/login.php" method="POST">
             <h1>Login</h1>
             <div class="content">
                 <?php
