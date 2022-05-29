@@ -10,18 +10,6 @@ session_start();
     <link rel="stylesheet" href="CSS/raças.css">
 </head>
 
-<style>
-    table,
-    th,
-    td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 6px;
-    }
-    h4{
-        color: #581e00;
-    }
-</style>
 
 <body>
 
@@ -100,7 +88,7 @@ session_start();
         </nav>
     </div>
 
-    <table id="tabelas" cellspacing="0" cellpadding="0" border="none">
+    <table cellspacing="0" cellpadding="0" border="0">
         <tr>
             <td class="imagens">
 

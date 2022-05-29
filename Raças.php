@@ -9,18 +9,6 @@ session_start();
     <link rel="stylesheet" href="CSS/raças.css">
 </head>
 
-
-<style>
-    table,
-    th,
-    td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 6px;
-    }
-
-</style>
-
 <body>
 
 <header>
@@ -64,9 +52,6 @@ session_start();
                         Criador de Personagens
                     </a>
                 </li>
-                <li>
-                    <a href="http://localhost/Projeto/pdf.php">Gerar PDF</a>
-                </li>
 
                 <div id="direita">
 
@@ -100,7 +85,7 @@ session_start();
             </ul>
         </nav>
     </div>
-<table id="tabelas" cellspacing="0" cellpadding="0" border="none">
+<table cellspacing="0" cellpadding="0" border="0">
     <tr>
         <td class="imagens">
 
