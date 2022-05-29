@@ -89,12 +89,6 @@ include('config/verificalogin.php');
             </ul>
         </nav>
     </div>
-    <div>
-        <h2> Bem vindo, <?php
-                        $test = $_SESSION["usuario"];
-                        echo $test ?>!!</h2>
-
-    </div>
 
     <?php
 
@@ -112,7 +106,7 @@ include('config/verificalogin.php');
         $json_object = json_decode($result);
 
         if ($json_object != null) {
-            echo '<table cellspacing="0" cellpadding="0" border="none">';
+            echo '<table cellspacing="0" cellpadding="0" border="1">';
             echo '
             <tr>
         <th> ID da Perso.        </th>
@@ -182,7 +176,7 @@ include('config/verificalogin.php');
         curl_close($curl);
         $json_object = json_decode($result);
         if ($json_object != null) {
-            echo '<table cellspacing="0" cellpadding="0" border="none">';
+            echo '<table cellspacing="0" cellpadding="0" border="1">';
             echo '
                 <tr>
             <th> ID da Perso.        </th>
@@ -228,7 +222,7 @@ include('config/verificalogin.php');
         echo '</form>';
 
         echo "<p>Você é o administrador, você pode ver todos os utilizadores.</p>";
-        echo "<div id='users'>";
+        echo "<div id='tabela'>";
         $url = "http://localhost/Projeto/API/Users/read.php";
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -237,7 +231,7 @@ include('config/verificalogin.php');
         $result = curl_exec($curl);
         curl_close($curl);
         $json_object = json_decode($result);
-        echo '<table cellspacing="0" cellpadding="0" border="none">';
+        echo '<table cellspacing="0" cellpadding="0" border="1">';
         echo '
                 <tr>
             <th> ID do user     </th>

@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="CSS/raças.css">
+    <link rel="stylesheet" href="CSS/main.css">
     <meta charset="UTF-8">
     <title>DungeonPT - Armas</title>
 </head>
@@ -84,62 +84,76 @@ session_start();
             </ul>
         </nav>
     </div>
-<div>
-    <h2>Armas</h2>
+<div style="margin-left: 3%; margin-right: 3%;">
+    <h2 style="color: #581e00;">Armas</h2>
     Para sobreviveres às tuas aventuras terás de estar bem equipado para todos os confrontos e perigos com os quais te poderás cruzar.
     Sem forma de se protegerem os aventureiros não são diferentes dos outros habitantes. Dá uma olhada a algumas das aramas com que te poderás cruzar.
 </div>
-<h3>Armas Simples</h3>
-Estas podem ser usadas por qualquer personagem.
-<br>
-<br>
-<table cellspacing="0" cellpadding="0" border="none">
-    <tr>
-        <td>Arma</td><td>Dano</td><td>Propriedades</td>
-    </tr>
-    <tr>
-        <td>Club </td><td>1d4 bludgeoning</td><td>Light</td>
-    </tr>
-    <tr>
-        <td>Dagger</td><td>1d4 piercing</td><td>Finesse, light, thrown (range 20/60)</td>
-    </tr>
-    <tr>
-        <td>Greatclub</td><td>1d8 bludgeoning </td><td>Two-handed</td>
-    </tr>
-    <tr>
-        <td>Handaxe</td><td>1d6 slashing</td><td>Light, thrown (range 20/60)</td>
-    </tr>
-    <tr>
-        <td>Javelin</td><td>1d6 piercing</td><td>Thrown (range 30/120)</td>
-    </tr>
-    <tr>
-        <td>Light Hammer</td><td>1d4 bludgeoning</td><td>PLight, thrown (range 20/60)</td>
-    </tr>
-    <tr>
-        <td>Mace</td><td>1d6 bludgeoning</td><td>—</td>
-    </tr>
-    <tr>
-        <td>Quarterstaff</td><td>1d6 bludgeoning</td><td>Versatile (1d8)</td>
-    </tr>
-    <tr>
-        <td>Spear</td><td>1d6 piercing</td><td>Thrown (range 20/60), versatile (1d8)</td>
-    </tr>
-    <tr>
-        <td>Crossbow</td><td>1d8 piercing</td><td>Loading, two-handed</td>
-    </tr>
-    <tr>
-        <td>Shortbow</td><td>1d8 piercing</td><td>Two-handed</td>
-    </tr>
-</table>
+<div style="margin-left: 7%; margin-right: 3%;">
+    <h3>Armas Simples</h3>
+    Estas podem ser usadas por qualquer personagem.
+</div>
 
-<div>
+<div style="display: flex; flex-wrap: wrap" >
+
+        <table border="1" style="margin-left: 7%;">
+            <tr>
+                <td style="color: #581e00;">Arma</td><td style="color: #581e00;">Dano</td><td style="color: #581e00;">Propriedades</td>
+            </tr>
+            <tr>
+                <td>Club </td><td>1d4 bludgeoning</td><td>Light</td>
+            </tr>
+            <tr>
+                <td>Dagger</td><td>1d4 piercing</td><td>Finesse, light, thrown (range 20/60)</td>
+            </tr>
+            <tr>
+                <td>Greatclub</td><td>1d8 bludgeoning </td><td>Two-handed</td>
+            </tr>
+            <tr>
+                <td>Handaxe</td><td>1d6 slashing</td><td>Light, thrown (range 20/60)</td>
+            </tr>
+            <tr>
+                <td>Javelin</td><td>1d6 piercing</td><td>Thrown (range 30/120)</td>
+            </tr>
+            <tr>
+                <td>Light Hammer</td><td>1d4 bludgeoning</td><td>PLight, thrown (range 20/60)</td>
+            </tr>
+            <tr>
+                <td>Mace</td><td>1d6 bludgeoning</td><td>—</td>
+            </tr>
+            <tr>
+                <td>Quarterstaff</td><td>1d6 bludgeoning</td><td>Versatile (1d8)</td>
+            </tr>
+            <tr>
+                <td>Spear</td><td>1d6 piercing</td><td>Thrown (range 20/60), versatile (1d8)</td>
+            </tr>
+            <tr>
+                <td>Crossbow</td><td>1d8 piercing</td><td>Loading, two-handed</td>
+            </tr>
+            <tr>
+                <td>Shortbow</td><td>1d8 piercing</td><td>Two-handed</td>
+            </tr>
+        </table>
+
+
+     <img src="imagens/spear-removebg-preview.png" style="margin-left: 20%">
+</div>
+
+<div style="text-align: center;"><img src="imagens/separator.png" style="width: 40%; height: 50%; margin-top: 2%"></div>
+
+
+
+
+<div style="margin-left: 7%; margin-right: 3%;">
     <h3>Armas Marciais</h3>
     Estas podem ser usadas por personagens que possuam essa habilidade.
-    <br>
-    <br>
-    <table cellspacing="0" cellpadding="0" border="none">
+</div>
+
+<div style="display: flex; flex-wrap: wrap" >
+
+    <table border="1" style="margin-left: 7%;">
         <tr>
-            <td>Arma</td><td>Dano</td><td>Propriedades</td>
+            <td style="color: #581e00;">Arma</td><td style="color: #581e00;">Dano</td><td style="color: #581e00;">Propriedades</td>
         </tr>
         <tr>
             <td>Battleaxe</td><td>1d8 slashing</td><td>Versatile (1d10)</td>
@@ -176,7 +190,12 @@ Estas podem ser usadas por qualquer personagem.
         </tr>
     </table>
 
+
+    <img src="imagens/dsword-removebg-preview.png" style="margin-left: 20%">
 </div>
+
+
+
 
 <div class="footer">DungeonPT.lmd no rights reserved</div>
 
