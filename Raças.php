@@ -52,6 +52,11 @@ session_start();
                         Criador de Personagens
                     </a>
                 </li>
+                <li>
+                    <a href="pdf.php">
+                        Gerar PDF
+                    </a>
+                </li>
 
                 <div id="direita">
 
