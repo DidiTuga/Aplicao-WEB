@@ -15,7 +15,7 @@ header img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     font-size: 16px;
-  }
+}
 nav a:hover {
     background-color: whitesmoke;
     padding: 10px 3px;
@@ -48,30 +48,10 @@ nav #direita{
     color: white;
 
 }
-
-.texto{
-    width: 25%;
-}
-
-.imagens{
-    text-align: center;
-}
-.sparador{
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-}
-table{
-    border:transparent;
-}
-
-#tabela table{
-    border: 1px solid black;
-}
-
 body{
     background-color: #E4D1B9;
-        font-size: medium;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: medium;
 }
 h4{
     color: #581e00;
@@ -79,6 +59,21 @@ h4{
 h3{
     color: #581e00;
 }
-h2{
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #e9d2b4}
+
+th {
+    background-color: #581e00;
     color: #581e00;
 }
+tr:hover {background-color: #956769;}

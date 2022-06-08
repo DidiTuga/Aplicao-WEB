@@ -6,9 +6,12 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>DungeonPT - Feitiços</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/spells.css">
 </head>
-<body>
+<body style="font-family: 'Roboto', sans-serif;">
 
 <header>
     <img src="imagens/lostmines.jpg">
@@ -28,36 +31,36 @@ session_start();
             <ul>
                 <li>
                     <a href="index.php">
-                        Página Inicial
+                        <b>Página Inicial</b>
                     </a>
                 </li>
                 <li>
                     <a href="classes.php">
-                        Classes
+                        <b>Classes</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="Raças.php">
-                        Raças
+                        <b>Raças</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="feitiços.php">
-                        Feitiços
+                        <b>Feitiços</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="armas.php">
-                        Armas
+                        <b>Armas</b>
                     </a>
                 </li>
 
                 <li>
                 <a href="criaPersonagens.php">
-                        Criador de Personagens
+                    <b>Criador de Personagens</b>
                     </a>
                 </li>
 
@@ -67,10 +70,10 @@ session_start();
                     if (isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <a href="painel.php">Profile</a>
+                            <b><a href="painel.php">Profile</a><b>
                         </li>
                         <li>
-                            <a href="config/logout.php"> Sair</a>
+                            <b><a href="config/logout.php"> Sair</a></b>
                         </li>
 
                     <?php
@@ -80,7 +83,7 @@ session_start();
                     if (!isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <a href="R_login.php">Entrar</a>
+                            <b><a href="R_login.php">Entrar</a><b>
                         </li>
 
                     <?php
@@ -93,16 +96,17 @@ session_start();
             </ul>
         </nav>
     </div>
+<div style="margin-right: 3%; margin-left: 3%;">
 <div>
-    <h2 style="color: #581e00;">Feitiços</h2>
+    <h1 style="color: #581e00;"><b>Feitiços</b></h1>
     Quem controla a magia é capaz de tudo, feiticeiros e estudantes das artes arcanas aqui tendes a lista de feitiços que poderam usar para suportar
     os vossos companhios e derrotar os vossos inimigos.
 </div>
-<div>
-    <h3>Cantrip</h3>
+<b>
+    <h2 style="color: #581e00"><b>Cantrip</b></h2>
     <table border="" style="border-color: #581e00; border-width: 2px">
-        <tr>
-            <td style="color: #581e00;">Nome</td><td style="color: #581e00;">Cast</td><td style="color: #581e00;">Range</td><td style="color: #581e00;">Descrição</td>
+        <tr style="background: #5e2129;color: #E4D1B9;">
+            <td>Nome</td><td>Cast</td><td>Range</td><td>Descrição</td>
         </tr>
         <tr>
             <td>Dancing Lights</td><td>1 action</td><td>120 feet</td><td>Crias até quatro luzes que podes controlar, cada luz ilumina um raio de 10 feet</td>
@@ -119,11 +123,11 @@ session_start();
     </table>
 </div>
 
-<div>
-    <h3>Feitiços nivel 1</h3>
+<div style="margin-right: 3%; margin-left: 3%;">
+    <h2 style="color: #581e00"><b>Feitiços nivel 1</b></h2>
     <table border="1" style="border-color: #581e00; border-width: 2px">
-        <tr>
-            <td style="color: #581e00;">Nome</td><td style="color: #581e00;">Cast</td><td style="color: #581e00;">Range</td><td style="color: #581e00;">Descrição</td>
+        <tr style="background: #5e2129;color: #E4D1B9;">
+            <td>Nome</td><td>Cast</td><td>Range</td><td>Descrição</td>
         </tr>
         <tr>
             <td>Burning Hands</td><td>1 action</td><td>15 foot cone</td><td>Juntas os teus polgares enquato estendes as tuas mão e chamas sãem para a area à tua frente, os inimigos apanhos no ataque fazem um Dexterity saving throw se passarem recebem metade do dano, sendo este 3d6 de fire damage</td>
@@ -140,11 +144,11 @@ session_start();
     </table>
 </div>
 
-<div>
-    <h3>Feitiços nivel 2</h3>
+<div style="margin-right: 3%; margin-left: 3%;">
+    <h2 style="color: #581e00"><b>Feitiços nivel 2</b></h2>
     <table border="1" style="border-color: #581e00; border-width: 2px">
-        <tr>
-            <td style="color: #581e00;">Nome</td><td>Cast</td><td style="color: #581e00;">Range</td><td style="color: #581e00;">Descrição</td>
+        <tr style="background: #5e2129;color: #E4D1B9;">
+            <td>Nome</td><td>Cast</td><td>Range</td><td>Descrição</td>
         </tr>
         <tr>
             <td>Blur</td><td>1 action</td><td>Self</td><td>Fica blured a todos os que te vêm durante um minuto, todos os ataques contra ti têm devantagem.</td>
@@ -158,11 +162,11 @@ session_start();
     </table>
 </div>
 
-<div>
-    <h3>Feitiços nivel 3</h3>
+<div style="margin-right: 3%; margin-left: 3%;">
+    <h2 style="color: #581e00"><b>Feitiços nivel 3</b></h2>
     <table border="1" style="border-color: #581e00; border-width: 2px">
-        <tr>
-            <td style="color: #581e00;">Nome</td><td style="color: #581e00;">Cast</td><td style="color: #581e00;">Range</td><td style="color: #581e00;">Descrição</td>
+        <tr style="background:#5e2129;color: #E4D1B9;">
+            <td>Nome</td><td>Cast</td><td>Range</td><td>Descrição</td>
         </tr>
         <tr>
             <td>Fierball</td><td>1 action</td><td>150 feet</td><td>Do teu dedo sai um pequeno flash que se transforma numa explosão de fogo num local que apontes. Todas as criaturas num raio de 20 foot da explosão Têm de fazer um Desterity saving throw se falharem recebem 8d6 de fire damage, se passarem recebem metade</td>
@@ -173,7 +177,7 @@ session_start();
 
     </table>
 </div>
-
+</div>
 <div class="footer">DungeonPT.lmd no rights reserved</div>
 
 </body>

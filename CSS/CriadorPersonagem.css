@@ -1,0 +1,137 @@
+header img {
+    width: 100%;
+    height: 60vh
+}
+#menu nav {
+
+    background-color: black;
+    padding: 1px 0px;
+    margin-bottom: 10px;
+}
+#notificacao{
+    background-color: rgb(189, 20, 20);
+    padding: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 16px;
+}
+nav a:hover {
+
+    background-color: whitesmoke;
+    padding: 10px 3px;
+    border-radius: 5px;
+    color: #581e00;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+
+nav #direita{
+    float: right;
+}
+
+#menu li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 35px;
+    margin-top: 15px;
+}
+
+.footer {
+    margin-top: 10px;
+    font-size: small;
+    text-align: center;
+    background-color: black;
+    padding: 15px;
+    color: white;
+
+}
+body{
+    background-color: #E4D1B9;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: medium;
+
+}
+h4{
+    color: #581e00;
+}
+h3{
+    color: #581e00;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #e9d2b4}
+
+th {
+    background-color: #581e00;
+    color: #e9d2b4;
+}
+tr:hover {background-color: #956769;}
+
+
+.button-34 {
+    background: #5e2129;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #E4D1B9;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.input-group{
+    position: relative;
+}
+.input{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: #5e2129;
+    background-color: transparent;
+    outline: 2px solid #5e2129;
+}
+.input-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px,10px);
+    transition: transform .25s;
+    color: #5e2129;
+}
+.input:focus+.input-label,
+.input:valid+.input-label{
+    transform: translate(10px, -14px) scale(.8);
+    color: #5e2129;
+    padding-inline: 5px;
+    background-color: #E4D1B9;
+}
+.input:is(:focus, :valid){
+    outline-color: #5e2129;
+}

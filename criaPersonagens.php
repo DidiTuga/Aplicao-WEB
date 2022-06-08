@@ -11,7 +11,10 @@ include('config/verificalogin.php');
 <head>
     <meta charset="UTF-8">
     <title>DungeonPT - Criador de Personagens</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/CriadorPersonagem.css">
 </head>
 
 <body>
@@ -22,36 +25,36 @@ include('config/verificalogin.php');
     <div id="menu">
         <nav>
             <ul>
-                <li>
+                <li style="text-align: center">
                     <a href="index.php">
                         Página Inicial
                     </a>
                 </li>
-                <li>
+                <li style="text-align: center">
                     <a href="classes.php">
                         Classes
                     </a>
                 </li>
 
-                <li>
+                <li style="text-align: center">
                     <a href="Raças.php">
                         Raças
                     </a>
                 </li>
 
-                <li>
+                <li style="text-align: center">
                     <a href="feitiços.php">
                         Feitiços
                     </a>
                 </li>
 
-                <li>
+                <li style="text-align: center">
                     <a href="armas.php">
                         Armas
                     </a>
                 </li>
 
-                <li>
+                <li style="text-align: center">
                     <a href="criaPersonagens.php">
                         Criador de Personagens
                     </a>
@@ -62,10 +65,10 @@ include('config/verificalogin.php');
                     <?php
                     if (isset($_SESSION['usuario'])) :
                     ?>
-                        <li>
+                        <li style="text-align: center">
                             <a href="painel.php">Profile</a>
                         </li>
-                        <li>
+                        <li style="text-align: center">
                             <a href="config/logout.php"> Sair</a>
                         </li>
 
@@ -113,11 +116,12 @@ include('config/verificalogin.php');
                 ?>
     <div id="body">
         Aqui podes criar a tua personagem de Dungeons and Dragons, depois ao vim de criares vai te aparecer no teu profile!
-        <div id="form">
+        <div id="form" style="margin-top: 15px">
             <form action="API/Personagens/create.php" method='POST'>
-                <p><label>Nome da Personagem:</label>
-                    <input type="text" name="nome" placeholder="Nome">
-                </p>
+                <div class="input-group">
+                    <input type="text" name="nome" placeholder="Nome" required class="input">
+                    <label for="nome" class="input-label">Nome da Personagem:</label>
+                </div>
 
                 <label>Escolhe a tua raça:</label>
                 <select name="raca" id="raca">

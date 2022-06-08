@@ -4,11 +4,14 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/spells.css">
     <meta charset="UTF-8">
     <title>DungeonPT - Armas</title>
 </head>
-<body>
+<body style="font-family: 'Roboto', sans-serif;">
 
 <header>
     <img src="imagens/lostmines.jpg">
@@ -19,36 +22,36 @@ session_start();
             <ul>
                 <li>
                     <a href="index.php">
-                        Página Inicial
+                        <b>Página Inicial</b>
                     </a>
                 </li>
                 <li>
                     <a href="classes.php">
-                        Classes
+                        <b>Classes</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="Raças.php">
-                        Raças
+                        <b>Raças</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="feitiços.php">
-                        Feitiços
+                        <b>Feitiços</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="armas.php">
-                        Armas
+                        <b>Armas</b>
                     </a>
                 </li>
 
                 <li>
                 <a href="criaPersonagens.php">
-                        Criador de Personagens
+                    <b>Criador de Personagens</b>
                     </a>
                 </li>
 
@@ -58,10 +61,10 @@ session_start();
                     if (isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <a href="painel.php">Profile</a>
+                            <b><a href="painel.php">Profile</a></b>
                         </li>
                         <li>
-                            <a href="config/logout.php"> Sair</a>
+                            <b><a href="config/logout.php"> Sair</a></b>
                         </li>
 
                     <?php
@@ -71,7 +74,7 @@ session_start();
                     if (!isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <a href="R_login.php">Entrar</a>
+                            <b><a href="R_login.php">Entrar</a></b>
                         </li>
 
                     <?php
@@ -91,14 +94,14 @@ session_start();
 </div>
 <div style="margin-left: 7%; margin-right: 3%;">
     <h3>Armas Simples</h3>
-    Estas podem ser usadas por qualquer personagem.
+    <p>Estas podem ser usadas por qualquer personagem.</p>
 </div>
 
-<div style="display: flex; flex-wrap: wrap" >
+<div style="display: flex; flex-wrap: wrap">
 
-        <table border="1" style="margin-left: 7%;">
-            <tr>
-                <td style="color: #581e00;">Arma</td><td style="color: #581e00;">Dano</td><td style="color: #581e00;">Propriedades</td>
+        <table border="1" style="border-color: #581e00; border-width: 2px; margin-left: 7%;width: 50%;">
+            <tr style="background:#5e2129; color: #E4D1B9;">
+                <td>Arma</td><td>Dano</td><td>Propriedades</td>
             </tr>
             <tr>
                 <td>Club </td><td>1d4 bludgeoning</td><td>Light</td>
@@ -136,7 +139,7 @@ session_start();
         </table>
 
 
-     <img src="imagens/spear-removebg-preview.png" style="margin-left: 20%">
+     <img src="imagens/spear-removebg-preview.png" style="margin-left: 15px; width: 25%">
 </div>
 
 <div style="text-align: center;"><img src="imagens/separator.png" style="width: 40%; height: 50%; margin-top: 2%"></div>
@@ -146,14 +149,14 @@ session_start();
 
 <div style="margin-left: 7%; margin-right: 3%;">
     <h3>Armas Marciais</h3>
-    Estas podem ser usadas por personagens que possuam essa habilidade.
+   <p>Estas podem ser usadas por personagens que possuam essa habilidade.</p>
 </div>
 
 <div style="display: flex; flex-wrap: wrap" >
 
-    <table border="1" style="margin-left: 7%;">
-        <tr>
-            <td style="color: #581e00;">Arma</td><td style="color: #581e00;">Dano</td><td style="color: #581e00;">Propriedades</td>
+    <table border="1" style="border-color: #581e00; border-width: 2px; margin-left: 7%;width: 50%;">
+        <tr style="background:#5e2129;color: #E4D1B9;">
+            <td>Arma</td><td>Dano</td><td>Propriedades</td>
         </tr>
         <tr>
             <td>Battleaxe</td><td>1d8 slashing</td><td>Versatile (1d10)</td>
@@ -191,10 +194,10 @@ session_start();
     </table>
 
 
-    <img src="imagens/dsword-removebg-preview.png" style="margin-left: 20%">
+    <img src="imagens/dsword-removebg-preview.png" style="margin-left: 10px; width: 25%">
 </div>
 
-
+<div style="text-align: center;"><img src="imagens/separator.png" style="width: 40%; height: 50%; margin-top: 2%"></div>
 
 
 <div class="footer">DungeonPT.lmd no rights reserved</div>

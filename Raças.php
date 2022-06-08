@@ -6,55 +6,58 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>DungeonPT - Raças</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/raças.css">
 </head>
 
-<body>
+<body style="font-family: 'Roboto', sans-serif;">
 
 <header>
     <img src="imagens/lostmines.jpg">
 </header>
 
-<div id="menu">
+<div id="menu" style="font-size: 14px">
         <nav>
             <ul>
                 <li>
                     <a href="index.php">
-                        Página Inicial
+                        <b>Página Inicial</b>
                     </a>
                 </li>
                 <li>
                     <a href="classes.php">
-                        Classes
+                        <b>Classes</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="Raças.php">
-                        Raças
+                        <b>Raças</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="feitiços.php">
-                        Feitiços
+                        <b>Feitiços</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="armas.php">
-                        Armas
+                        <b>Armas</b>
                     </a>
                 </li>
 
                 <li>
                 <a href="criaPersonagens.php">
-                        Criador de Personagens
+                    <b>Criador de Personagens</b>
                     </a>
                 </li>
                 <li>
                     <a href="pdf.php">
-                        Gerar PDF
+                        <b>Gerar PDF</b>
                     </a>
                 </li>
 
@@ -64,10 +67,10 @@ session_start();
                     if (isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <a href="painel.php">Profile</a>
+                            <b><a href="painel.php">Profile</a></b>
                         </li>
                         <li>
-                            <a href="config/logout.php"> Sair</a>
+                            <b><a href="config/logout.php"> Sair</a></b>
                         </li>
 
                     <?php
@@ -77,7 +80,7 @@ session_start();
                     if (!isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <a href="R_login.php">Entrar</a>
+                            <b><a href="R_login.php">Entrar</a></b>
                         </li>
 
                     <?php
@@ -90,15 +93,16 @@ session_start();
             </ul>
         </nav>
     </div>
+<div style="margin-right: 3%; margin-left: 3%;">
 <table cellspacing="0" cellpadding="0" border="0">
     <tr>
         <td class="imagens">
 
-                <img src="imagens/elf-removebg-preview.png">
+                <img src="imagens/elf-removebg-preview.png" style="border: 10px solid #581e00; padding: 3px">
 
         </td>
         <td colspan="2" class="texto">
-            <h3>Elfos</h3>
+            <h2> <b>Elfos</b> </h2>
             Uma raça magica ligada à natureza. Vivem em florestas antigas ou em torres prateadas que duram milénios, por isso são muito ligados à arte, à música e à poesia.
             Por viverem durante muitos anos os elfos dão valor às coisas simples do mundo.
             <p>
@@ -109,12 +113,12 @@ session_start();
             <p>
                 Um elfo é uma mais valia para qualquer grupo de aventureiros, pois as suas habilidades marciais são conhecidas por todo o mundo, se tiveres um elfo a teu lado este não te vai deixar mal.
             </p>
-            <h4>Traços da Raça:</h4>
+            <h3>Traços da Raça:</h3>
             <ul>
                 <li>Habituados a viver nas florestas e a crepusculos o personagem desta raça tem darkvision.</li>
                 <li>Argeis e rápidos, personagens desta raça ganha +2 na Dexterity </li>
             </ul>
-            <h4>Sub-raças</h4>
+            <h3>Sub-raças</h3>
             Alto Elfo
             <ul>
                 <li>O valor de Wisdom do personagem aumenta em 1.</li>
@@ -141,7 +145,7 @@ session_start();
     </tr>
     <tr>
         <td colspan="2" class="texto">
-            <h3>Humano</h3>
+            <h2> <b>Humano</b></h2>
             Os humanos umas das raças comuns deste universo, com uma vida curta comparados a outras raças existentes. Por isso fazem o melhor com o pouco tempo que têm.
             Por isso são uma raça inovadora e pioneira, tendo vástos impérios espalhados pelo mundo que duram eras e alguns nunca chegaram a ruir.
             <p>
@@ -150,14 +154,14 @@ session_start();
             <p>
                 Muitos humanos quando se tornam aventureiros fazem no por desejarem riquezas e fama ou para deixarem um legado grandioso, cuja história nunca será capaz de esquecer.
             </p>
-            <h4>Traços da Raça:</h4>
+            <h3>Traços da Raça:</h3>
             <ul>
                 <li>São capazes de falar várias linguas por isso um personagem humano sabe Comum e outra lingua à sua escolha</li>
                 <li>São bastante equilibrados por isso um personagem ganha +1 em todos os atributos </li>
             </ul>
         </td>
         <td class="imagens">
-            <img src="imagens/human2-removebg-preview.png">
+            <img src="imagens/human2-removebg-preview.png" style="border: 10px solid #581e00; padding: 3px">
         </td>
     </tr>
     <tr>
@@ -167,11 +171,11 @@ session_start();
     </tr>
     <tr>
         <td class="imagens">
-            <img src="imagens/dwarf-removebg-preview.png">
+            <img src="imagens/dwarf-removebg-preview.png" style="margin-right: 15px; border: 10px solid #581e00; padding: 3px">
         </td>
 
         <td colspan="2" class="texto">
-                <h3>Anões</h3>
+                <h2><b>Anões</b></h2>
                 Reis e Lordes de reinos ricos de antiga grandeza, salões esculpidos no interiror das montanhas, o eco de picaretas nas minas mais profundas e martelos nas forjas ardentes conhecidas pelo mundo.
                 Orgulhosos da sua história e com um compromisso com o clã e a tradição os anões não quecem o passado lutam até ao ultimo suspiro para protegerem o que é seu.
                 <p>
@@ -179,12 +183,12 @@ session_start();
                     Trair um anão não é algo que seja sábio fazer pois o sentido de justiça destes, torna a vingança de um anão na vingança do seu clã.
                 </p>
 
-                <h4>Traços da Raça:</h4>
+                <h3>Traços da Raça:</h3>
                 <ul>
                     <li>Habituados a viver no interiror das montanhas o personagem desta raça tem darkvision.</li>
                     <li>Fortes e robustos personagens desta raça ganha +2 na Constitution.</li>
                 </ul>
-                <h4>Sub-raças</h4>
+                <h3>Sub-raças</h3>
                 Anão Da Colina
                 <ul>
                     <li>O valor de Wisdom do personagem aumenta em 1.</li>
@@ -198,7 +202,7 @@ session_start();
         </td>
     </tr>
 </table>
-
+</div>
 
 
 

@@ -6,8 +6,8 @@
 }
 
 body {
-  background: url("../imagens/tiamat.jpg");
-  background-size: cover
+  background: url("../../../../Users/simao/Desktop/Programação Web/trabalho final/imagens/tiamat.jpg");
+  background-size: cover;
   height: 90vh;
   background-position: center;
   background-repeat: no-repeat; 

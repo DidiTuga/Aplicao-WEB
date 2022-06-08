@@ -11,8 +11,18 @@ include('config/verificalogin.php');
 <head>
     <meta charset="UTF-8">
     <title>DungeonPT - Perfil</title>
-    <link rel="stylesheet" href="CSS/raças.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/CriadorPersonagem.css">
 </head>
+
+<style>
+    #cores{
+        background:#5e2129;
+        color: #E4D1B9;
+    }
+</style>
 
 <body>
 
@@ -24,36 +34,36 @@ include('config/verificalogin.php');
             <ul>
                 <li>
                     <a href="index.php">
-                        Página Inicial
+                        <b>Página Inicial</b>
                     </a>
                 </li>
                 <li>
                     <a href="classes.php">
-                        Classes
+                        <b>Classes</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="Raças.php">
-                        Raças
+                        <b>Raças</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="feitiços.php">
-                        Feitiços
+                        <b>Feitiços</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="armas.php">
-                        Armas
+                        <b>Armas</b>
                     </a>
                 </li>
 
                 <li>
                     <a href="criaPersonagens.php">
-                        Criador de Personagens
+                        <b>Criador de Personagens</b>
                     </a>
                 </li>
 
@@ -89,7 +99,7 @@ include('config/verificalogin.php');
             </ul>
         </nav>
     </div>
-
+<div style="margin-left: 10px">
     <?php
 
     // LoGIN USER NORMAL
@@ -108,7 +118,7 @@ include('config/verificalogin.php');
         if ($json_object != null) {
             echo '<table cellspacing="0" cellpadding="0" border="1">';
             echo '
-            <tr>
+            <tr id="cores">
         <th> ID da Perso.        </th>
         <th> Username      </th>
         <th> Nome da Perso. </th>
@@ -178,7 +188,7 @@ include('config/verificalogin.php');
         if ($json_object != null) {
             echo '<table cellspacing="0" cellpadding="0" border="1">';
             echo '
-                <tr>
+                <tr style="background:#5e2129; color: #E4D1B9;">
             <th> ID da Perso.        </th>
             <th> Username      </th>
             <th> Nome da Perso. </th>
@@ -217,8 +227,11 @@ include('config/verificalogin.php');
         // PHP INPUT Text
         echo '<p>Apagar uma personagem: </p>';
         echo '<form action="http://localhost/Projeto/API/Personagens/delete.php" method="post">';
-        echo '<p>ID da personagem: <input type="text" name="id" /></p>';
-        echo '<p><input type="submit" value="Apagar" /></p>';
+        echo'<div class="input-group">';
+        echo '<input type="text" name="id" required class="input"/>
+                <label for="id" class="input-label">ID da personagem:</label>';
+        echo '<p><input type="submit" value="Apagar" class="button-34"/></p>';
+        echo'</div>';
         echo '</form>';
 
         echo "<p>Você é o administrador, você pode ver todos os utilizadores.</p>";
@@ -233,7 +246,7 @@ include('config/verificalogin.php');
         $json_object = json_decode($result);
         echo '<table cellspacing="0" cellpadding="0" border="1">';
         echo '
-                <tr>
+                <tr style="background:#5e2129; color: #E4D1B9;">
             <th> ID do user     </th>
             <th> Username      </th>
             <th> Email    </th>
@@ -253,7 +266,7 @@ include('config/verificalogin.php');
     }
 
     ?>
-
+</div>
     <div class="footer">DungeonPT.lmd all rights reserved</div>
 
 </body>
