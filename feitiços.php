@@ -99,8 +99,8 @@ session_start();
 <div style="margin-right: 3%; margin-left: 3%;">
 <div>
     <h1 style="color: #581e00;"><b>Feitiços</b></h1>
-    Quem controla a magia é capaz de tudo, feiticeiros e estudantes das artes arcanas aqui tendes a lista de feitiços que poderam usar para suportar
-    os vossos companhios e derrotar os vossos inimigos.
+    Quem controla a magia é capaz de tudo, feiticeiros e estudantes das artes arcanas aqui tendes a lista de feitiços que poderão usar para suportar
+    os vossos companheiros e derrotar os vossos inimigos.
 </div>
 <b>
     <h2 style="color: #581e00"><b>Cantrip</b></h2>
@@ -109,16 +109,16 @@ session_start();
             <td>Nome</td><td>Cast</td><td>Range</td><td>Descrição</td>
         </tr>
         <tr>
-            <td>Dancing Lights</td><td>1 action</td><td>120 feet</td><td>Crias até quatro luzes que podes controlar, cada luz ilumina um raio de 10 feet</td>
+            <td>Dancing Lights</td><td>1 action</td><td>120 feet</td><td>Crias até quatro luzes que podes controlar, cada luz ilumina um raio de 10ft</td>
         </tr>
         <tr>
-            <td>Mage Hand</td><td>1 action</td><td>30 feet</td><td>Uma mão fantasma  apareçe num local que escolhes, para controlar a mão, ou manipular objetos com ela gastas a tua action, não podes atacar com a mão</td>
+            <td>Mage Hand</td><td>1 action</td><td>30 feet</td><td>Uma mão fantasma apareçe num local que escolhes, para controlar a mão, ou manipular objetos com ela gastas a tua action, não podes atacar com a mão</td>
         </tr>
         <tr>
-            <td>Ray of Frost</td><td>1 action</td><td>60 feet</td><td>Um raio azul esbrnaquiçado sai das tuas mãos, se acertares fazes 1d8 de cold damage e o adversário só se pode mover 10 feet no proximo turno</td>
+            <td>Ray of Frost</td><td>1 action</td><td>60 feet</td><td>Um raio azul esbrnaquiçado sai das tuas mãos, se acertares fazes 1d8 de cold damage e o adversário só se pode mover 10ft no proximo turno</td>
         </tr>
         <tr>
-            <td>Shoking Grasp</td><td>1 action</td><td>Touch</td><td>Eletricidade sai da tua mão para o teu alvo, tens vantagem para acertar se o alvo tivera usar armadura de metal, fazes 1d8 de lightning damage</td>
+            <td>Shoking Grasp</td><td>1 action</td><td>Touch</td><td>Eletricidade sai da tua mão para o teu alvo, tens vantagem para acertar se o alvo tivera usar armadura de metal, fazes 1d8 de dano relampago</td>
         </tr>
     </table>
 </div>
@@ -130,16 +130,16 @@ session_start();
             <td>Nome</td><td>Cast</td><td>Range</td><td>Descrição</td>
         </tr>
         <tr>
-            <td>Burning Hands</td><td>1 action</td><td>15 foot cone</td><td>Juntas os teus polgares enquato estendes as tuas mão e chamas sãem para a area à tua frente, os inimigos apanhos no ataque fazem um Dexterity saving throw se passarem recebem metade do dano, sendo este 3d6 de fire damage</td>
+            <td>Burning Hands</td><td>1 action</td><td>15 foot cone</td><td>Juntas os teus polgares enquato estendes as tuas mão e chamas sãem para a area à tua frente, os inimigos apanhos no ataque fazem um saving throw de destreza se passarem recebem metade do dano, sendo este 3d6 de dano de fogo</td>
         </tr>
         <tr>
-            <td>Comprehend Language</td><td>1 action</td><td>self</td><td>Durante a proxima hora, consegues entender todas as linguagens, escritas ou faladas</td>
+            <td>Comprehend Language</td><td>1 action</td><td>self</td><td>Durante a próxima hora, consegues entender todas as linguagens, escritas ou faladas</td>
         </tr>
         <tr>
-            <td>Detect Magic</td><td>1 action</td><td>self</td><td>Durante 10 min se mantiveres concentração podes detetar magia ao teu redor até 30 feet, consegues visualizar auras e descubrir a escola de magia a qual o feitiço pertence</td>
+            <td>Detect Magic</td><td>1 action</td><td>self</td><td>Durante 10 min se mantiveres concentração podes detetar magia ao teu redor até 30ft, consegues visualizar auras e descobrir a escola de magia a qual o feitiço pertence</td>
         </tr>
         <tr>
-            <td>Mage Armor</td><td>1 action</td><td>Touch</td><td>Tocas numa criatura que não esteja a usar amadura e até o feitiço acabar esta ganha AC = 13 + o seu Dexterity modifier</td>
+            <td>Mage Armor</td><td>1 action</td><td>Touch</td><td>Tocas numa criatura que não esteja a usar amadura e até o feitiço acabar esta ganha AC = 13 + o teu modificador de destreza</td>
         </tr>
     </table>
 </div>
@@ -151,13 +151,13 @@ session_start();
             <td>Nome</td><td>Cast</td><td>Range</td><td>Descrição</td>
         </tr>
         <tr>
-            <td>Blur</td><td>1 action</td><td>Self</td><td>Fica blured a todos os que te vêm durante um minuto, todos os ataques contra ti têm devantagem.</td>
+            <td>Blur</td><td>1 action</td><td>Self</td><td>Fica desfocado a todos os que te conseguem ver durante um minuto, todos os ataques contra ti têm devantagem.</td>
         </tr>
         <tr>
-            <td>Hold Person</td><td>1 action</td><td>60 feet</td><td>Imobiliza um humanoide que esteja ao teu alcanse se falahar num Wisdom saving throw no inicio de cada turno deste ou se o tempo do feitiço acabar</td>
+            <td>Hold Person</td><td>1 action</td><td>60 feet</td><td>Imobiliza um humanoide que esteja ao teu alcanse se falhar num saving throw de sabedoria, no inicio de cada turno deste volta a repetir o saving trow se passar ou se o tempo do feitiço acabar deixa de estar imobilizado</td>
         </tr>
         <tr>
-            <td>Misty Step</td><td>1 bonus action</td><td>Self</td><td>Envolto num nevoeiro prateado teleporta até 30 feet para um lugar que possas ver</td>
+            <td>Misty Step</td><td>1 bonus action</td><td>Self</td><td>Envolto num nevoeiro prateado teleporta até 30ft para um lugar que possas ver</td>
         </tr>
     </table>
 </div>
@@ -169,10 +169,10 @@ session_start();
             <td>Nome</td><td>Cast</td><td>Range</td><td>Descrição</td>
         </tr>
         <tr>
-            <td>Fierball</td><td>1 action</td><td>150 feet</td><td>Do teu dedo sai um pequeno flash que se transforma numa explosão de fogo num local que apontes. Todas as criaturas num raio de 20 foot da explosão Têm de fazer um Desterity saving throw se falharem recebem 8d6 de fire damage, se passarem recebem metade</td>
+            <td>Fierball</td><td>1 action</td><td>150 feet</td><td>Do teu dedo sai um pequeno flash que se transforma numa explosão de fogo num local que apontes. Todas as criaturas num raio de 20ft da explosão têm de fazer um saving throw de destreza, se falharem recebem 8d6 de dano de fogo, se passarem recebem metade</td>
         </tr>
         <tr>
-            <td>Fly</td><td>1 action</td><td>Touch</td><td>Ao tocares numa criatura esta ganha 60 feet de movimento no ar. Caso o feitiço acabe e a criatura estiver a voar esta cai podendo levar dano de queda</td>
+            <td>Fly</td><td>1 action</td><td>Touch</td><td>Ao tocares numa criatura esta ganha 60ft de movimento no ar. Caso o feitiço acabe e a criatura estiver a voar esta cai podendo levar dano de queda</td>
         </tr>
 
     </table>

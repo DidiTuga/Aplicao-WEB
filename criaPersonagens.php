@@ -25,38 +25,38 @@ include('config/verificalogin.php');
     <div id="menu">
         <nav>
             <ul>
-                <li style="text-align: center">
+                <li>
                     <a href="index.php">
-                        Página Inicial
+                        <b>Página Inicial</b>
                     </a>
                 </li>
-                <li style="text-align: center">
+                <li>
                     <a href="classes.php">
-                        Classes
+                        <b>Classes<b>
                     </a>
                 </li>
 
-                <li style="text-align: center">
+                <li>
                     <a href="Raças.php">
-                        Raças
+                        <b>Raças</b>
                     </a>
                 </li>
 
-                <li style="text-align: center">
+                <li>
                     <a href="feitiços.php">
-                        Feitiços
+                        <b>Feitiços</b>
                     </a>
                 </li>
 
-                <li style="text-align: center">
+                <li>
                     <a href="armas.php">
-                        Armas
+                        <b>Armas</b>
                     </a>
                 </li>
 
-                <li style="text-align: center">
+                <li>
                     <a href="criaPersonagens.php">
-                        Criador de Personagens
+                        <b>Criador de Personagens</b>
                     </a>
                 </li>
 
@@ -64,12 +64,12 @@ include('config/verificalogin.php');
 
                     <?php
                     if (isset($_SESSION['usuario'])) :
-                    ?>
-                        <li style="text-align: center">
-                            <a href="painel.php">Profile</a>
+                        ?>
+                        <li>
+                            <b><a href="painel.php">Profile</a></b>
                         </li>
-                        <li style="text-align: center">
-                            <a href="config/logout.php"> Sair</a>
+                        <li>
+                            <b><a href="config/logout.php"> Sair</a></b>
                         </li>
 
                     <?php
@@ -77,9 +77,9 @@ include('config/verificalogin.php');
                     ?>
                     <?php
                     if (!isset($_SESSION['usuario'])) :
-                    ?>
+                        ?>
                         <li>
-                            <a href="R_login.php">Entrar</a>
+                            <b><a href="R_login.php">Entrar</a></b>
                         </li>
 
                     <?php
@@ -115,39 +115,52 @@ include('config/verificalogin.php');
                 unset($_SESSION['existe']);
                 ?>
     <div id="body">
-        Aqui podes criar a tua personagem de Dungeons and Dragons, depois ao vim de criares vai te aparecer no teu profile!
-        <div id="form" style="margin-top: 15px">
+        <div style="display: flex; flex-wrap: wrap;margin-left: 5%">
+            <div style="width: 60%;">
+            <div id="form" style="margin-top: 15px;">
+                Aqui podes criar a tua personagem de Dungeons and Dragons, depois ao vim de criares vai te aparecer no teu profile!
+                <br>
+                <br>
             <form action="API/Personagens/create.php" method='POST'>
                 <div class="input-group">
-                    <input type="text" name="nome" placeholder="Nome" required class="input">
-                    <label for="nome" class="input-label">Nome da Personagem:</label>
+                    <input type="text" name="nome" required class="input">
+                    <label for="nome" class="input-label">Nome:</label>
                 </div>
-
+                <br>
+                <br>
                 <label>Escolhe a tua raça:</label>
+                <br>
+                <br>
+                <div class="select-dropdown">
                 <select name="raca" id="raca">
                     <option value="Humano">Humano</option>
                     <option value="Anão">Anão</option>
                     <option value="Elfo">Elfo</option>
                 </select>
+                </div>
                 <br>
                 <br>
                 <label>Escolhe a tua classe:</label>
-                <select name="classe" id="classe">
-                    <option value="Lutador">Lutador</option>
-                    <option value="Rogue">Rogue</option>
-                    <option value="Feiticeiro">Feiticeiro</option>
-                </select>
                 <br>
+                <br>
+                <div class="select-dropdown">
+                    <select name="classe" id="classe">
+                        <option value="Lutador">Lutador</option>
+                        <option value="Rogue">Rogue</option>
+                        <option value="Feiticeiro">Feiticeiro</option>
+                    </select>
+                </div>
                 <br>
                 <p>Status: força | inteligência | sabedoria | destreza | constituição | carisma</p>
                 <p>Os seus status vão ser gerados aleatoriamente! Depois podes ver no teu perfil quais foram os que te calharam!</p>
-                <input type="submit" value="Submit" name="Criar">
+                <input type="submit" value="Submit" name="Criar" class="button-34">
             </form>
 
         </div>
-
-    </div>
-
+            </div>
+            <img src="imagens/book-magic-removebg-preview.png" style="margin-left: 15px; width: 25%">
+        </div>
+        </div>
 
 
     <div class="footer">DungeonPT.lmd all rights reserved</div>

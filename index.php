@@ -101,22 +101,21 @@ session_start();
     unset($_SESSION['iniciar']);
     ?>
     <div style="margin-left: 3%; margin-right: 3%;">
-        <h3>Bem vindo ao Dungeon PT.</h3>
-        O teu lugar de eleição para encontrares recursos sobre Dungeons and Dragons em portugês.
-        Aqui podes obter a informação que procuras, desde feitiços mestriosos, a raças deste rpg de mesa, aos monstros que vai combater ou com os
+        <h2>Bem vindo ao Dungeon PT.</h2>
+        O teu lugar de eleição para encontrares recursos sobre Dungeons and Dragons em português.
+        Aqui podes obter a informação que procuras, desde feitiços misteriosos, a raças deste rpg de mesa, aos monstros que vai combater ou com os
         quais vais dificultar a vida aos teus jogadores, e muito mais, para isso temos essa informação a um click de distância.
         Se quiseres entrar neste mundo o sitio ideal é ires ao nosso criador de personagens onde podes fazer o teu primeiro PC
         pronto para a mesa de jogo.
-        Hora de agarrar e nos dados e boa sorte nas tuas aventuras.
+        Hora de agarrar e nos dados, e boa sorte nas tuas aventuras.
     </div>
 
     <div style="margin-left: 3%; margin-right: 3%;">
-        <h3>O que é D&D?</h3>
+        <h2>O que é D&D?</h2>
         Dungeons and Dragons é um tabeltop RPG conhecido e jogado mundialmente.
-        Este jogo de fantazia premite que embarques em histórias colétivas e aventuras inesqueciveis com os teus amigos. Dá asas à tua imaginação e deixa-te levar
-        na imaginação dos teus colegas, para tal cira um personagem, junta um grupo, pega nos dados e toca a rolar.
-        Para te ajudar a dar os primeiros passos disponibizamos neste site informação e ferramentas para facilitar o teu embarque neste mundo de histórias coletivas.
-
+        Este jogo de fantasia permite que embarques em histórias coletivas e aventuras inesquecíveis com os teus amigos. Dá asas à tua imaginação e deixa-te levar
+        na imaginação dos teus colegas, para tal cria um personagem, junta um grupo, pega nos dados e toca a rolar.
+        Para te ajudar a dar os primeiros passos disponibilizamos neste site informação e ferramentas para facilitar o teu embarque neste mundo de histórias coletivas.
     </div>
     <div style="text-align: center; margin-top: 40px">
         <img src="imagens/mesa.jpg" style="border: 10px solid #581e00; padding: 3px">

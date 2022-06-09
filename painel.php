@@ -73,10 +73,10 @@ include('config/verificalogin.php');
                     if (isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <a href="painel.php">Profile</a>
+                            <a href="painel.php"><b>Profile</b></a>
                         </li>
                         <li>
-                            <a href="config/logout.php"> Sair</a>
+                            <a href="config/logout.php"> <b>Sair</b></a>
                         </li>
 
                     <?php
@@ -86,7 +86,7 @@ include('config/verificalogin.php');
                     if (!isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <a href="R_login.php">Entrar</a>
+                            <a href="R_login.php"><b>Entrar</b></a>
                         </li>
 
                     <?php
@@ -99,7 +99,7 @@ include('config/verificalogin.php');
             </ul>
         </nav>
     </div>
-<div style="margin-left: 10px">
+<div style="margin-left: 10px"> <b>
     <?php
 
     // LoGIN USER NORMAL
@@ -225,11 +225,11 @@ include('config/verificalogin.php');
             echo "<p><b>Não existem personagens criadas!</b></p>";
         }
         // PHP INPUT Text
-        echo '<p>Apagar uma personagem: </p>';
+        echo '<p>Para apagar uma personagem insira o seu ID: </p>';
         echo '<form action="http://localhost/Projeto/API/Personagens/delete.php" method="post">';
         echo'<div class="input-group">';
         echo '<input type="text" name="id" required class="input"/>
-                <label for="id" class="input-label">ID da personagem:</label>';
+                <label for="id" class="input-label">ID:</label>';
         echo '<p><input type="submit" value="Apagar" class="button-34"/></p>';
         echo'</div>';
         echo '</form>';
@@ -262,7 +262,7 @@ include('config/verificalogin.php');
                 </tr>';
         }
         echo '</table>';
-        echo "</div>";
+        echo "</b></div> ";
     }
 
     ?>
