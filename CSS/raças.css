@@ -55,6 +55,11 @@ nav #direita{
 
 .imagens{
     text-align: center;
+    width: 10%;
+}
+#humano{
+    text-align: center;
+
 }
 .sparador{
     text-align: center;
@@ -71,7 +76,8 @@ table{
 
 body{
     background-color: #E4D1B9;
-        font-size: medium;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: medium;
 }
 h4{
     color: #581e00;
