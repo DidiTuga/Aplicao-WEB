@@ -29,7 +29,7 @@ session_start();
                 </li>
                 <li>
                     <a href="classes.php">
-                        <b>Classes<b>
+                        <b>Classes</b>
                     </a>
                 </li>
 
@@ -128,7 +128,7 @@ session_start();
     </div>
     </br>
 
-    <div class="footer">DungeonPT.lmd no rights reserved</div>
+    <div class="footer"><b>DungeonPT.lmd no rights reserved</b></div>
 
 </body>
 

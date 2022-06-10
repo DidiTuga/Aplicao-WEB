@@ -70,7 +70,7 @@ session_start();
                     if (isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <b><a href="painel.php">Profile</a><b>
+                            <b><a href="painel.php">Profile</a></b>
                         </li>
                         <li>
                             <b><a href="config/logout.php"> Sair</a></b>
@@ -83,7 +83,7 @@ session_start();
                     if (!isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <b><a href="R_login.php">Entrar</a><b>
+                            <b><a href="R_login.php">Entrar</a></b>
                         </li>
 
                     <?php
@@ -178,7 +178,7 @@ session_start();
     </table>
 </div>
 </div>
-<div class="footer">DungeonPT.lmd no rights reserved</div>
+<div class="footer"><b>DungeonPT.lmd no rights reserved</b></div>
 
 </body>
 </html>

@@ -32,7 +32,7 @@ include('config/verificalogin.php');
                 </li>
                 <li>
                     <a href="classes.php">
-                        <b>Classes<b>
+                        <b>Classes</b>
                     </a>
                 </li>
 
@@ -163,7 +163,7 @@ include('config/verificalogin.php');
         </div>
 
 
-    <div class="footer">DungeonPT.lmd all rights reserved</div>
+    <div class="footer"><b>DungeonPT.lmd all rights reserved</b></div>
 
 </body>
 

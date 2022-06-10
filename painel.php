@@ -99,7 +99,7 @@ include('config/verificalogin.php');
             </ul>
         </nav>
     </div>
-<div style="margin-left: 10px"> <b>
+<div style="margin-left: 10px"> 
     <?php
 
     // LoGIN USER NORMAL
@@ -267,7 +267,7 @@ include('config/verificalogin.php');
 
     ?>
 </div>
-    <div class="footer">DungeonPT.lmd all rights reserved</div>
+    <div class="footer"><b>DungeonPT.lmd all rights reserved</b></div>
 
 </body>
 

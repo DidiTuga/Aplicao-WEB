@@ -214,7 +214,7 @@ session_start();
     </table>
 </div>
 
-    <div class="footer">DungeonPT.lmd no rights reserved</div>
+    <div class="footer"><b>DungeonPT.lmd no rights reserved</b></div>
 
 </body>
 
