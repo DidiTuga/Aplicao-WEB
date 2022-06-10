@@ -11,7 +11,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/spells.css">
 </head>
-<body style="font-family: 'Roboto', sans-serif;">
+<body>
 
 <header>
     <img src="imagens/lostmines.jpg">
