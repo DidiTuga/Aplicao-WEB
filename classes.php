@@ -66,7 +66,7 @@ session_start();
                         <li>
                             <b><a href="painel.php">Profile</a></b>
                         </li>
-                        <b>
+                        <li>
                             <b><a href="config/logout.php"> Sair</a></b>
                         </li>
 

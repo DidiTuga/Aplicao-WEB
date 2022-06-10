@@ -102,7 +102,7 @@ session_start();
     Quem controla a magia é capaz de tudo, feiticeiros e estudantes das artes arcanas aqui tendes a lista de feitiços que poderão usar para suportar
     os vossos companheiros e derrotar os vossos inimigos.
 </div>
-<b>
+<div>
     <h2 style="color: #581e00"><b>Cantrip</b></h2>
     <table border="" style="border-color: #581e00; border-width: 2px">
         <tr style="background: #5e2129;color: #E4D1B9;">

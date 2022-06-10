@@ -58,7 +58,7 @@ class User{
     //verificar se o user já existe
     public function searchNome($nome){
         // select all query
-        $query = "SELECT  *  FROM " . $this->table_name . " WHERE username='".$nome."'";
+        $query = "SELECT  *  FROM " . $this->table_name . " WHERE username='".$nome."' and password=md5('".$this->password."')";
   
         // prepare query statement
         $stmt = $this->conn->prepare($query);

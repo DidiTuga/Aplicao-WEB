@@ -73,7 +73,7 @@ include('config/verificalogin.php');
                     if (isset($_SESSION['usuario'])) :
                     ?>
                         <li>
-                            <a href="painel.php"><b>Profile</b></a>
+                            <a href="painel.php"><b>Perfil</b></a>
                         </li>
                         <li>
                             <a href="config/logout.php"> <b>Sair</b></a>

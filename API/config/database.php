@@ -5,7 +5,7 @@ class Database{
     private $host = "localhost";
     private $db_name = "pweb";
     private $username = "root";
-    private $password = "";
+    private $password = "zaXXfbWqVDCNE29";
     public $conn;
   
     // get the database connection

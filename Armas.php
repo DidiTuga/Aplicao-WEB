@@ -89,7 +89,6 @@ session_start();
             </ul>
         </nav>
     </div>
-    <b>
         <div style="margin-left: 3%; margin-right: 3%;">
             <h2 style="color: #581e00;">Armas</h2>
             Para sobreviveres às tuas aventuras terás de estar bem equipado para todos os confrontos e perigos com os quais te poderás cruzar.
@@ -250,7 +249,7 @@ session_start();
 
         <div style="text-align: center;"><img src="imagens/separator.png" style="width: 40%; height: 50%; margin-top: 2%"></div>
 
-    </b>
+
     <div class="footer"><b>DungeonPT.lmd no rights reserved</b></div>
 
 </body>
