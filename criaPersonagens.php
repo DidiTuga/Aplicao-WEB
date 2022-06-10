@@ -64,7 +64,7 @@ include('config/verificalogin.php');
 
                     <?php
                     if (isset($_SESSION['usuario'])) :
-                        ?>
+                    ?>
                         <li>
                             <b><a href="painel.php">Perfil</a></b>
                         </li>
@@ -77,7 +77,7 @@ include('config/verificalogin.php');
                     ?>
                     <?php
                     if (!isset($_SESSION['usuario'])) :
-                        ?>
+                    ?>
                         <li>
                             <b><a href="R_login.php">Entrar</a></b>
                         </li>
@@ -93,74 +93,74 @@ include('config/verificalogin.php');
         </nav>
     </div>
     <?php
-                if (isset($_SESSION['name'])) :
-                ?>
-                    <div id="notificacao">
-                        <p id="erro">Tem que colocar um nome na personagem!</p>
-                    </div>
+    if (isset($_SESSION['name'])) :
+    ?>
+        <div id="notificacao">
+            <p id="erro">Tem que colocar um nome na personagem!</p>
+        </div>
 
-                <?php
-                endif;
-                unset($_SESSION['name']);
-                ?>
-                <?php
-                if (isset($_SESSION['existe'])) :
-                ?>
-                    <div id="notificacao">
-                        <p>Já existe uma personagem com esse nome!</p>
-                    </div>
+    <?php
+    endif;
+    unset($_SESSION['name']);
+    ?>
+    <?php
+    if (isset($_SESSION['existe'])) :
+    ?>
+        <div id="notificacao">
+            <p>Já existe uma personagem com esse nome!</p>
+        </div>
 
-                <?php
-                endif;
-                unset($_SESSION['existe']);
-                ?>
+    <?php
+    endif;
+    unset($_SESSION['existe']);
+    ?>
     <div id="body">
         <div style="display: flex; flex-wrap: wrap;margin-left: 5%">
             <div style="width: 60%;">
-            <div id="form" style="margin-top: 15px;">
-                Aqui podes criar a tua personagem de Dungeons and Dragons, depois ao vim de criares vai te aparecer no teu profile!
-                <br>
-                <br>
-            <form action="API/Personagens/create.php" method='POST'>
-                <div class="input-group">
-                    <input type="text" name="nome" required class="input">
-                    <label for="nome" class="input-label">Nome:</label>
-                </div>
-                <br>
-                <br>
-                <label>Escolhe a tua raça:</label>
-                <br>
-                <br>
-                <div class="select-dropdown">
-                <select name="raca" id="raca">
-                    <option value="Humano">Humano</option>
-                    <option value="Anão">Anão</option>
-                    <option value="Elfo">Elfo</option>
-                </select>
-                </div>
-                <br>
-                <br>
-                <label>Escolhe a tua classe:</label>
-                <br>
-                <br>
-                <div class="select-dropdown">
-                    <select name="classe" id="classe">
-                        <option value="Lutador">Lutador</option>
-                        <option value="Rogue">Rogue</option>
-                        <option value="Feiticeiro">Feiticeiro</option>
-                    </select>
-                </div>
-                <br>
-                <p>Status: força | inteligência | sabedoria | destreza | constituição | carisma</p>
-                <p>Os seus status vão ser gerados aleatoriamente! Depois podes ver no teu perfil quais foram os que te calharam!</p>
-                <input type="submit" value="Submit" name="Criar" class="button-34">
-            </form>
+                <div id="form" style="margin-top: 15px;">
+                    Aqui podes criar a tua personagem de Dungeons and Dragons, depois ao vim de criares vai te aparecer no teu profile!
+                    <br>
+                    <br>
+                    <form action="API/Personagens/create.php" method='POST'>
+                        <div class="input-group">
+                            <input type="text" name="nome" required class="input">
+                            <label for="nome" class="input-label">Nome:</label>
+                        </div>
+                        <br>
+                        <br>
+                        <label>Escolhe a tua raça:</label>
+                        <br>
+                        <br>
+                        <div class="select-dropdown">
+                            <select name="raca" id="raca">
+                                <option value="Humano">Humano</option>
+                                <option value="Anão">Anão</option>
+                                <option value="Elfo">Elfo</option>
+                            </select>
+                        </div>
+                        <br>
+                        <br>
+                        <label>Escolhe a tua classe:</label>
+                        <br>
+                        <br>
+                        <div class="select-dropdown">
+                            <select name="classe" id="classe">
+                                <option value="Lutador">Lutador</option>
+                                <option value="Rogue">Rogue</option>
+                                <option value="Feiticeiro">Feiticeiro</option>
+                            </select>
+                        </div>
+                        <br>
+                        <p>Status: força | inteligência | sabedoria | destreza | constituição | carisma</p>
+                        <p>Os seus status vão ser gerados aleatoriamente! Depois podes ver no teu perfil quais foram os que te calharam!</p>
+                        <input type="submit" value="Submit" name="Criar" class="button-34">
+                    </form>
 
-        </div>
+                </div>
             </div>
             <img src="imagens/book-magic-removebg-preview.png" style="margin-left: 15px; width: 25%">
         </div>
-        </div>
+    </div>
 
 
     <div class="footer"><b>DungeonPT.lmd all rights reserved</b></div>

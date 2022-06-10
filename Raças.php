@@ -16,7 +16,7 @@ session_start();
 <body>
 
     <header>
-        <img src="imagens/lostmines.jpg">
+        <img src="imagens/tiamt.jpg">
     </header>
 
     <div id="menu">
